@@ -20,15 +20,30 @@ const ContenedorDescripcion = styled(Contenedor)`
     display: flex;
     width: 95%;
     text-align: left;
+
+    @media (max-width: 480px) {
+    flex-direction:column;
+    margin: 10px;
+    width: 100%;
+  }
 `
 
 const Descripcion = styled.div`
     display: inline-grid;
     justify-items: start;
     align-items: center;
+    
+    @media (max-width: 480px) {
+   display:flex;
+   flex-direction:column;   
+  }
 `
 const InfoHabilidades = styled(Info)`
     margin: 20px 0;
+
+    @media (max-width: 480px) {
+      text-align: center;
+    }
 `
 
 const Logo = styled.img`
@@ -36,6 +51,10 @@ const Logo = styled.img`
   height: 80px;
   margin: 0.3rem;
   border-radius: 10px;
+
+  @media (max-width: 480px) {
+    margin: 5px;
+  }
 `;
 
 const ContenedorIconos = styled(Contenedor)`
@@ -45,10 +64,20 @@ const ContenedorIconos = styled(Contenedor)`
   align-content: center;
   max-width: 40%;
   justify-content: center;
+
+  @media (max-width: 480px) {
+    max-width:none;
+    margin: 0 auto;
+  }
 `;
 
 const BotonHabilidades = styled(Boton)`
     margin-top: 4rem;
+
+    @media (max-width: 480px) {
+      display:block;
+      margin: 4rem;
+    }
 `
 const Habilidades = () => {
     return <ContenedorDescripcion id="descripcion">

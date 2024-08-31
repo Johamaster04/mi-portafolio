@@ -11,9 +11,19 @@ const SiteFooter = styled(Contenedor)`
     background-color: #1c1c1c;
     padding: 15rem 3rem 0 6rem;
     margin: -12rem auto;
+
+    @media (max-width: 480px ) {
+        margin: -12rem 10px;
+        display: flex;
+        padding: 12rem 5px 0 5px;        
+    }
 `
 const BloquesFooter = styled.div`
     margin: 1rem;
+
+    @media (max-width: 480px) {
+        margin: 0 auto 10px auto;
+    }
 `
 const TituloFooter = styled.h3`
     background: none;
@@ -34,6 +44,10 @@ const EnlaceFooter = styled(Enlace)`
     display: block;
     color: #7b7b7b;
     margin: 1rem;
+
+    @media (max-width: 480px) {
+        font-size: 16px;
+    }
 `
 const Input = styled.input`
     width: 24rem;

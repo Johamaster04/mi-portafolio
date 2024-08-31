@@ -1,6 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import  './assets/styles/normalize.css'
-
+import "./assets/styles/normalize.css";
 
 const GlobalStyle = createGlobalStyle`
 html {
@@ -14,6 +13,12 @@ body {
   background-color: #212529;
   font-family: "Poppins", sans-serif;
 }
+
+@media (max-width: 480px) {
+    body{
+     width:90%;
+    }
+  }
 
 *,
 *:before,
@@ -29,6 +34,15 @@ a {
 
 section {
   margin: 4rem;
+}
+
+@media (max-width: 480px ) {
+  section {
+  display:flex;
+  flex-direction: column;
+  margin: 10px;
+  width:100%;
+}
 }
 
 img {
@@ -75,6 +89,13 @@ h1 {
   margin-top: 1.2rem;
 }
 
+@media (max-width: 480px ) {
+  h1 {
+ font-size: 30px;
+ text-align:center
+}
+}
+
 h2 {
   color: white;
   font-family: "Inter", "sans-serif";
@@ -106,6 +127,6 @@ p {
   font-size: 24px;
   align-self: center;
 }
-`
+`;
 
-export default GlobalStyle
+export default GlobalStyle;

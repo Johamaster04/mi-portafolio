@@ -6,12 +6,36 @@ import styled from "styled-components";
 const SeccionInformacion = styled.section`
   display: grid;
   grid-template-columns: 50% 50%;
-`;
+
+  @media (max-width: 480px) {
+    display:flex;
+  }
+ `;
+
+const ImagenInfo = styled.img`
+ @media (max-width: 480px) {
+    display:none;
+  }
+`
+
 const ConstenedorInfo = styled(Contenedor)`
   text-align: left;
+
+  @media (max-width: 480px) {
+    display: flex;
+    flex-direction:column;
+    text-align:center;
+    width:100%;
+    padding: 10px;
+  }
 `;
+
 const Titulo = styled.h3`
   width: 155px;
+  
+  @media (max-width:480px ) {
+    align-self:center;
+  }
 `;
 
 export const Info = styled.p`
@@ -22,6 +46,10 @@ export const Info = styled.p`
   line-height: 30px;
   color: white;
   margin-top: 2.9rem;
+
+  @media (max-width:480px ) {
+    font-size: 20px;
+  }
 `;
 
 const BotonInfo = styled(Boton)`
@@ -36,7 +64,7 @@ const BotonInfo = styled(Boton)`
 const Informacion = () => {
   return (
     <SeccionInformacion id="acerca-de-mi">
-      <img src={Acerca} alt="Sobre Mi" />
+      <ImagenInfo src={Acerca} alt="Sobre Mi" />
 
       <ConstenedorInfo>
         <Titulo class="yo">Quien Soy</Titulo>

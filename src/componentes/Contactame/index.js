@@ -13,11 +13,19 @@ const Trabajo = styled.section`
   max-width: 120rem;
   margin: 0 auto;
   position: relative;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    padding: 5px;
+    text-align: center;
+    margin: 10px;
+  }
 `;
 const TituloTrabajo = styled.h1`
   color: black;
   margin: 0 1rem;
 `;
+
 const DescripcionTrabajo = styled.h3`
   font-size: 16px;
   line-height: 30px;
@@ -26,10 +34,20 @@ const DescripcionTrabajo = styled.h3`
   height: 59.99951171875px;
   width: 359.00018310546875px;
   color: black;
+
+  @media (max-width: 480px) {
+    width: 100%;
+    height: 100%;
+  }
 `;
+
 const BotonTrabajo = styled(Boton)`
   border: 2px solid black;
   margin: 1rem;
+
+  @media (max-width: 480px) {
+    display: block;
+  }
 `;
 
 const TrabajaConmigo = () => {

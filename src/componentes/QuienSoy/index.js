@@ -15,7 +15,11 @@ const ContenedorLogros = styled(Contenedor)`
     display: flex;
     margin-top: 50px;
     width: 100%;
-    justify-content: center
+    justify-content: center;
+
+  @media (max-width:480px ) {
+    flex-direction: column;
+  }
 `
 
 const Logros = styled.div`
@@ -27,6 +31,10 @@ const Logros = styled.div`
   border-radius: 1rem;
   margin: 10px;
   width: 30%;
+
+  @media (max-width: 480px ) {
+    width: auto;
+  }
 `;
 
 const ImagenLogros = styled.img`
@@ -47,6 +55,10 @@ const TituloLogros = styled.p`
     line-height: 40px;
     color: white;
     text-align: center;
+
+    @media (max-width: 480px) {
+      font-size: 13px;
+    }
 `
 
 const NumeroLogros = styled.span`

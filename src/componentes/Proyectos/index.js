@@ -12,6 +12,13 @@ import ProjectCard from "./Cardproyectos";
 const ContenedorProyectos = styled.main`
   margin: 5rem auto;
   width: 95%;
+
+  @media (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin:20px 10px;
+  }
 `;
 export const ProyectosTitulos = styled.div`
   text-align: center;
@@ -19,6 +26,11 @@ export const ProyectosTitulos = styled.div`
 export const StyledH3 = styled.h3`
   width: 20%;
   margin: 0 auto;
+
+  @media (max-width: 480px) {
+    width: 70%;
+    margin: 10px auto;
+  }
 `;
 
 const ContenedorBloques = styled(Contenedor)`
